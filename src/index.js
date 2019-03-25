@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import CSS
+import 'reset-css'
+import './index.css'
+import './markdown.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// import the raw contents of sampleDocument as a string.
+/* eslint-disable-next-line import/no-webpack-loader-syntax */
+import sampleDocument from '!raw-loader!./sampleDocument.md'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import { renderDocument } from './render'
+document.body.appendChild(renderDocument(sampleDocument))
