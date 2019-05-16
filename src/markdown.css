@@ -1,4 +1,159 @@
-/*
-    put your markdown styles here
-    these rules should apply to arbitrary documents
-*/
+* {
+cursor: url(http://cur.cursors-4u.net/nature/nat-11/nat1021.cur), auto;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background:  #FFF380; 
+  }  
+::-webkit-scrollbar-thumb {
+    background: #E0B0FF; 
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #E4287C; 
+  }
+  h1 , h2, h3, h4, h5, h6 {
+    font-family: 'Space Mono', monospace;
+
+}
+h1 {
+    font-size: 50px;
+    text-decoration: underline #FFF380;
+    padding-bottom: 20px;
+    color:#E4287C;
+    letter-spacing: 5px;
+    width: 100%;
+    align-content: center;
+}
+h2 {
+    font-size: 30px;
+    color: #E4287C;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+h2::before  {
+    content: "💎";
+}
+
+p, ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+ul {
+	padding: 16px 0 10px 40px;
+    list-style: square;
+}
+pre,
+code,
+kbd,
+samp,
+tt{
+    font-family: Scheherazade;
+    font-size:15px;
+    letter-spacing: 2px;
+    color: #E4287C;
+    max-width: 50%;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+a {
+    color: #99004C;
+    text-decoration: underline;
+    width: 100%;
+}
+
+body {
+    background-color: hotpink;
+    background-image: url("unicorn.png"), url("movingstars3.gif");
+    background-repeat: no-repeat, repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: contain, auto;
+    max-width: 800px;
+    padding-left: 45px;
+    text-align: left;
+}
+
+
+div {
+    padding: 25px 40px 40px 40px;
+    background-color:#E0B0FF;
+    border-left:solid;
+    border-right:solid;
+    border-width: 20px;
+    border-color: #FFF380;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+
+p:last-child{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF380;
+    color: #E4287C;
+    font-weight: bold;  
+    text-align: center;
+    padding: 5px;
+ }
+
+@media screen and (max-width: 1024px) {
+    body{
+        background-image: url("movingstars3.gif");
+        background-size: 80px;
+        background-repeat: repeat;
+        max-width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 100%;
+    }
+        div{
+            padding: 20px 20px 20px 20px;
+        }
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12PX;
+    }
+    pre,
+    code,
+    kbd,
+    samp,
+    tt{
+        font-size: 10px;
+        padding-left: 20px;
+        max-width: 70%;
+}
+    ul{
+        font-size: 10px;
+    }
+    p:last-child{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #FFF380;
+        color: #E4287C;
+        font-weight: bold;  
+        text-align: center;
+        padding: 5px;
+        font-size: 8px;
+    }
+}
+
