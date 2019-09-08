@@ -62,9 +62,10 @@ tt{
 }
 
 a {
-    color: #99004C;
+    color: yellow;
     text-decoration: underline;
     width: 100%;
+    cursor: pointer;
 }
 
 body {
@@ -117,62 +118,71 @@ p:last-child{
             padding: 20px 20px 20px 20px;
 
         }
+
     h1{
         font-size: 35px;
     }
+
     h2{
         font-size: 20px;
     }
-    p{
-        font-size: 12PX;
-    }
-    pre,
-    code,
-    kbd,
-    samp,
-    tt{
-        font-size: 10px;
-        padding-left: 20px;
-        font-family: Scheherazade;
+
+  p{
+   font-size: 12PX;
+  }
+
+  pre,
+  code,
+  kbd,
+  samp,
+  tt{
+    font-size: 10px;
+    padding-left: 20px;
+    font-family: Scheherazade;
     font-size: 1em;
     letter-spacing: 2px;
     color: #E4287C;
-}
-.overflow{
-    overflow: scroll;
-       margin-top: 15px;
-       margin-left: 30px;
-       border: none;
+
+}.overflow{
+  overflow: scroll;
+  margin-top: 15px;
+  margin-left: 30px;
+  border: none;
 }
 
-    ul{
-        font-size: 10px;
-    }
-    p:last-child{
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #FFF380;
-        color: #E4287C;
-        font-weight: bold;
-        text-align: center;
-        padding: 5px;
-        font-size: 8px;
-    }
+ul{
+  font-size: 10px;
+
+}
+
+p:last-child{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFF380;
+  color: #E4287C;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  font-size: 8px;
+  }
+
 }
 
 @media screen and (max-width:750px){
-    body{
-        height: 100%;
-    }
 
-    h1 {
-        font-size: 1.8em;
-    }
+  body{
+    height: 100%;
+  }
 
-    div{
-        padding-bottom: 3em;
-        margin: 0 2% 0% 2%;
-    }
+  h1 {
+    font-size: 1.6em;
+  }
+
+  div{
+    padding-bottom: 3em;
+    margin: 0 1% 0% 1%;
+  }
+
 }
