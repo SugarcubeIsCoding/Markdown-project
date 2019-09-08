@@ -6,20 +6,20 @@ cursor: url(http://cur.cursors-4u.net/nature/nat-11/nat1021.cur), auto;
     width: 20px;
 }
 ::-webkit-scrollbar-track {
-    background:  #FFF380; 
-  }  
+    background:  #FFF380;
+  }
 ::-webkit-scrollbar-thumb {
-    background: #E0B0FF; 
+    background: #E0B0FF;
   }
 ::-webkit-scrollbar-thumb:hover {
-    background: #E4287C; 
+    background: #E4287C;
   }
   h1 , h2, h3, h4, h5, h6 {
     font-family: 'Space Mono', monospace;
 
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2.3em;
     text-decoration: underline #FFF380;
     padding-bottom: 20px;
     color:#E4287C;
@@ -28,7 +28,7 @@ h1 {
     align-content: center;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 2em;
     color: #E4287C;
     padding-bottom: 10px;
     padding-top: 15px;
@@ -40,7 +40,7 @@ h2::before  {
 
 p, ul {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     color: black;
 }
 
@@ -54,7 +54,7 @@ kbd,
 samp,
 tt{
     font-family: Scheherazade;
-    font-size: 1rem;
+    font-size: 1em;
     letter-spacing: 2px;
     color: #E4287C;
     padding-top: 15px;
@@ -98,7 +98,7 @@ p:last-child{
     width: 100%;
     background-color: #FFF380;
     color: #E4287C;
-    font-weight: bold;  
+    font-weight: bold;
     text-align: center;
     padding: 5px;
  }
@@ -109,7 +109,7 @@ p:last-child{
         background-repeat: repeat;
         height: 100%;
         margin: 0 auto;
-        width: 80%; 
+        width: 80%;
         height: 1350px;
     }
         div{
@@ -145,9 +145,6 @@ p:last-child{
        border: none;
 }
 
-.overflow p{
-    
-}
     ul{
         font-size: 10px;
     }
@@ -158,7 +155,7 @@ p:last-child{
         width: 100%;
         background-color: #FFF380;
         color: #E4287C;
-        font-weight: bold;  
+        font-weight: bold;
         text-align: center;
         padding: 5px;
         font-size: 8px;
@@ -167,12 +164,15 @@ p:last-child{
 
 @media screen and (max-width:750px){
     body{
-        width: 90%; 
-        margin-left: 25%;
-        align-self: center;
         height: 100%;
     }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
     div{
         padding-bottom: 3em;
+        margin: 0 2% 0% 2%;
     }
 }
